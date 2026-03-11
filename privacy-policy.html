@@ -1,0 +1,390 @@
+<!doctype html>
+<html data-qb-installed="true">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sharp Infotech Inc.</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/media-queries.css" media="all" rel="stylesheet" /><script src="js/jquery-1.9.1.min.js"></script><script src="js/modernizr.min.js"></script>
+	<link href="images/top.png" rel="shortcut icon" type="image/x-icon" />
+	<style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+	</style>
+</head>
+<body data-gramm="false" data-qb-tmp-id="lt-147495"><!-- Navigation Start -->
+<div class="navigation"><!-- Main Nav Start -->
+<div class="nav">
+<ul id="menu">
+	<li id="fix-logo"><a href="index.html"><img alt="Sharp Consulting" class="fix-logo" src="images/main-logo.png" title="Sharp Consulting" /></a></li>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="solutions.html">Privacy Policy</a>
+	<ul>
+		<li><a href="operations-liberation.html">Operations Liberation</a></li>
+		<li><a href="customer-liberation.html">Customer Liberation</a></li>
+		<li><a href="workforce-liberation.html">WorkForce Liberation</a></li>
+	</ul>
+	</li>
+	<li><a href="services.html">Services</a>
+	<ul>
+		<li><a href="systems-management.html">Systems Management</a></li>
+		<li><a href="systems-integration.html">Systems Integration</a></li>
+		<li><a href="services.html">Professional Services</a></li>
+		<li><a href="business-analysis.html">Business Analysis</a></li>
+		<li><a href="software-development.html">Software Development</a></li>
+		<li><a href="project-management.html">Project Management</a></li>
+		<li><a href="testing-qa.html">Testing &amp; QA</a></li>
+		<li><a href="enterprise-management.html">Enterprise Management</a></li>
+	</ul>
+	</li>
+	<li><a href="success.html">Success</a>
+	<ul>
+		<li><a href="success.html">Banking &amp; Finance</a></li>
+		<li><a href="success.html">Retail &amp; Realestate</a></li>
+		<li><a href="success.html">Public &amp; Private Sector</a></li>
+	</ul>
+	</li>
+	<li><a href="people.html">People</a>
+	<ul>
+		<li><a href="people.html">Management</a></li>
+		<li><a href="careers.html">Careers</a></li>
+	</ul>
+	</li>
+	<li class="active"><a href="contact.html">Privacy Policy</a></li>
+	<li class="social"><img alt="" onclick="javascript:location.href=''" src="images/fb.png" /> <img alt="" onclick="javascript:location.href=''" src="images/twitter.png" /> <img alt="" onclick="javascript:location.href=''" src="images/gplus.png" /> <img alt="" onclick="javascript:location.href=''" src="images/linkedin.png" /></li>
+</ul>
+</div>
+
+<div class="mobilemenu"><a href="index.html"><img alt="Sharp Consulting" class="mobile-logo" src="images/main-logo.png" title="Sharp Consulting" /></a></div>
+<!-- Main Nav End --></div>
+<!-- Navigation End --><!-- Breadcrumb Start -->
+
+<div id="breadcrumb">
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li>Privacy Policy</li>
+</ul>
+</div>
+<!-- Breadcrumb End --><!-- Solutions Content Start -->
+
+<div class="content">
+<div class="container1">
+<h2>Privacy Policy</h2>
+
+<p>At Sharp Consulting, we are committed to protecting the privacy and security of our users&#39; personal information. This Privacy Policy outlines how we collect, use, disclose, and protect the information obtained through our website and services. By accessing or using our website, you agree to the terms of this policy.</p>
+
+<h3>Collection of Information:</h3>
+
+<p>Sharp Consulting collects information through various means, including direct interactions with our website, such as form submissions, inquiries, or the use of cookies and similar technologies. Additionally, we may receive data from third-party sources or service providers to improve our services and enhance user experience. We prioritize transparency and lawful data collection practices while respecting your privacy rights.</p>
+
+<h3>Use of Information:</h3>
+
+<p>We utilize the data collected at Sharp Consulting to enhance our services, personalize user experience, analyze website usage patterns, and improve overall functionality. Your information may also be used for legal compliance, policy enforcement, or protection of our rights and interests. We handle your data with care and in accordance with this Privacy Policy and applicable laws.</p>
+
+<h3>Protection of Information:</h3>
+
+<p>Sharp Consulting implements robust security measures to safeguard your personal information against unauthorized access, disclosure, alteration, or destruction. We employ encryption, access controls, firewalls, and regular security assessments to protect your data. While no method is entirely foolproof, we continuously strive to maintain the highest standards of data security.</p>
+
+<h3>Disclosure of Information:</h3>
+
+<p>We may disclose your personal information to trusted third-party service providers for website maintenance, service provision, or legal compliance purposes. Additionally, we may share data to fulfill legal obligations, enforce policies, address legal inquiries, or protect our rights. We ensure that personal information is disclosed only as necessary and in compliance with applicable laws.</p>
+
+<h3>Updates to Privacy Policy:</h3>
+
+<p>Sharp Consulting regularly reviews and updates this Privacy Policy to reflect changes in practices, legal requirements, or business operations. Any revisions will be prominently displayed on our website, along with the effective date of the update. We encourage you to review this policy periodically to stay informed about our data practices.</p>
+
+<h3>Contact Us:</h3>
+
+<p>If you have any questions or concerns regarding our Privacy Policy or data handling practices at Sharp Consulting, please contact us at <a href="mailto: info@sforceit.com"> info@sharpitco.com</a>. We value your privacy and are committed to addressing any inquiries promptly.</p>
+
+<p>Thank you for choosing Sharp Consulting</p>
+
+<p>Note : No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+</div>
+</div>
+<!-- Solutions Content End --><!-- Footer Start -->
+
+<div id="footer">
+<h1>Plano,Texas</h1>
+
+<div class="sec-wise"><img alt="Contact" src="images/phone.png" /> +469-331-9185</div>
+
+<div class="sec-wise"><img alt="Email" src="images/email.png" /> <a href="mailto:info@sharpitco.com">info@sharpitco.com</a></div>
+
+<div class="sec-wise"><img alt="Address" src="images/address.png" /> 6160 Warren Parkway, Ste#100,Frisco TX 75034</div>
+
+<div class="social-sect"><a href="#"><img alt="Facebook" src="images/fb-large.png" /></a> <a href="#"><img alt="Twitter" src="images/twtr-large.png" /></a> <a href="https://in.linkedin.com/in/ajay-jayadev-b2a87b13"><img alt="Linkedin" src="images/in-large.png" /></a> <a href="#"><img alt="Google +" src="images/gplus-large.png" /></a></div>
+
+<p>&copy; Copyright 2025 sharpitco.com All rights reserved.</p>
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="people.html">About Us</a></li>
+	<li><a href="careers.html">Careers</a></li>
+	<li><a href="solutions.html">Solutions</a></li>
+	<li><a href="services.html">Services</a></li>
+	<li><a href="success.html">Success</a></li>
+	<li><a href="privacy-policy.html">privacy-policy</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<!-- Footer End --><!-- Scripts Start --><script src="js/jquery.min.js"></script><script type="text/javascript" src="js/jquery.slicknav.js"></script><script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav({
+		appendTo: '.navigation'
+	});
+});
+
+if(screen.width >= 1024){
+$(window).scroll(function () {
+  var $menu = $('.navigation');
+  var scrollpos = $(window).scrollTop();
+    if (scrollpos >= 0) {
+        $menu.css( {
+            "position": "fixed",
+            "top": "0",
+        });
+		$('#fix-logo').show();
+		$('#default-logo').hide();
+		$('.nav').css('margin-top', '0');
+    } else {
+        $menu.css( {
+            "position": "relative",
+            "top" : "0",
+			"box-shadow": "none"
+        });
+		$('#fix-logo').hide();
+		$('#default-logo').show();
+    }
+});
+}
+</script></body>
+</html>

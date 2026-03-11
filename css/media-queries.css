@@ -1,0 +1,227 @@
+/* Mobile Displays */
+@media only screen and (min-width:200px) and (max-width: 1024px){
+.navigation{position:fixed;top:0;height:60px;background:#fff;width:100%;border-bottom:3px #48A5D4 solid;}
+.js #menu, .nav{display:none;}
+.js .slicknav_menu{display:block;width:100%;}
+ul.slicknav_nav li:first-child{display:none;}
+ul.slicknav_nav ul li:first-child{display:block;}
+img.mobile-logo{display:block;position:absolute;margin:5px 0 0 8px;max-width:170px;z-index:1001;}
+.slicknav_nav ul li a{color:#48a5d4;text-transform:none;}
+#main-theme{margin-top:63px !important;}
+#main-theme .theme-content, #highlight .wrapper, .wrapper, .what-we-manage, #breadcrumb ul{width:94%;}
+.services p{padding:50px 0;}
+#breadcrumb{top:60px;}
+.content{margin-top:100px;width:94%;padding:20px 0;}
+.content-right img{width:90%;text-align:right;}
+.contact-right{float:none;display:block;clear:both;width:100%;}
+.contact-left{float:none;display:block;clear:both;width:100%;}
+.contact-right img, .contact-right iframe, .contact-right video{width:100%;max-height:300px;overflow:hidden;}
+.content-left{float:left;}
+.content-right{float:right;}
+.content input[type="text"], .content-left input[type="text"], .contact-left input[type="text"], .contact-left textarea, .content-left textarea{width:100%;}
+.content input.btn-submit[type="submit"], .content-left input.btn-submit[type="submit"]{width:100%;}
+}
+
+/* Media Queries Effect from Lowest device */
+@media only screen and (min-width:200px) and (max-width: 359px){
+#main-theme{background-size:160% auto;padding:30px 0 11px;}
+#main-theme .theme-content h3{font-size:120%;}
+#main-theme .theme-content p{display:none;}
+#main-theme .theme-content h1{font-size:110%;line-height:100%;padding:0 0 12px;}
+#main-theme .theme-content a.link{display:inline-block;clear:none;min-width:auto;padding:0 10px;line-height:30px;font-size:80%;}
+.services span.ser-list{width:100%;display:block;}
+.what-we-manage .set-act, .what-we-manage .search{display:block;clear:both;width:100%;height:auto;min-height:360px;}
+.what-we-manage .search{height:auto;min-height:1px;padding:20px;}
+.what-we-manage .search a.link-main{display:block;clear:both;}
+.clients img{margin:5px auto;display:block;}
+#highlight .wrapper .main-service{display:block;clear:both;float:none;width:100%;}
+#highlight .wrapper .main-service:nth-child(1){border-bottom:1px #d5d5d5 dashed;padding-bottom:15px;margin-bottom:30px;}
+#highlight .wrapper .middle{display:none;}
+#highlight .wrapper .main-service h1{font-size:180%;line-height:100%;}
+#highlight{padding:40px 0;}
+.services h1{font-size:260%;line-height:100%;}
+.services hr{width:20%;}
+.services h3{font-size:150%;line-height:110%;}
+.services p{padding:25px 0;}
+.services span.ser-list{margin-top:30px;}
+.what-we-manage h1, .clients h1{font-size:32px;line-height:100%;}
+.clients hr{margin-bottom:25px;width:20%;}
+#footer{padding:40px 0;}
+#footer .sec-wise{display:block;clear:both;width:100%;}
+#footer ul p{clear:both;display:block;border:none;margin:10px auto;padding:0;}
+/* Inner Pages */
+.content h1, .content-left h1{font-size:200%;line-height:120%;}
+.content a.content-link, .content-left a.content-link{font-size:100%;line-height:120%;padding:5px 0;}
+.content p, .content-left p{font-size:12px;line-height:18px;}
+.content .testimonial::before{top:22%;font-size:40px;}
+.content .testimonial{white-space:normal;padding:20px;box-sizing:border-box;font-size:13px;line-height:140%;}
+.content h4, .content-left h4{font-size:20px;line-height:110%;}
+.content p.different, .content-left p.different{font-size:14px;line-height:150%;}
+.content ul.list-out li, .content-left ul.list-out li{background-position:left 3px;font-size:13px;line-height:20px;}
+.content ul.list-out, .content-left ul.list-out{margin:15px 10px;}
+.content .serv-type{width:100%;display:block;clear:both;margin:15px auto;}
+.content .serv-type div.banner h1{font-size:155%;left:10px;}
+}
+
+/* Media Queries Effect from 360px to 479px */
+@media only screen and (min-width:360px) and (max-width: 479px){
+#main-theme{background-size:160% auto;padding:30px 0 11px;}
+#main-theme .theme-content h3{font-size:120%;}
+#main-theme .theme-content p{display:none;}
+#main-theme .theme-content h1{font-size:110%;line-height:100%;padding:0 0 12px;}
+#main-theme .theme-content a.link{display:inline-block;clear:none;min-width:auto;padding:0 10px;line-height:30px;font-size:80%;}
+.services span.ser-list{width:100%;display:block;}
+.what-we-manage .set-act, .what-we-manage .search{display:block;clear:both;width:100%;height:auto;min-height:360px;}
+.what-we-manage .search{height:auto;min-height:1px;padding:20px;}
+.what-we-manage .search a.link-main{display:block;clear:both;}
+.clients img{margin:5px auto;display:block;}
+#highlight .wrapper .main-service{display:block;clear:both;float:none;width:100%;}
+#highlight .wrapper .main-service:nth-child(1){border-bottom:1px #d5d5d5 dashed;padding-bottom:15px;margin-bottom:30px;}
+#highlight .wrapper .middle{display:none;}
+#highlight .wrapper .main-service h1{font-size:180%;line-height:100%;}
+#highlight{padding:40px 0;}
+.services h1{font-size:260%;line-height:100%;}
+.services hr{width:20%;}
+.services h3{font-size:150%;line-height:110%;}
+.services p{padding:25px 0;}
+.services span.ser-list{margin-top:30px;}
+.what-we-manage h1, .clients h1{font-size:32px;line-height:100%;}
+.clients hr{margin-bottom:25px;width:20%;}
+#footer{padding:40px 0;}
+#footer .sec-wise{display:block;clear:both;width:100%;}
+#footer ul p{clear:both;display:block;border:none;margin:10px auto;padding:0;}
+/* Inner Pages */
+.content h1, .content-left h1{font-size:200%;line-height:120%;}
+.content a.content-link, .content-left a.content-link{font-size:100%;line-height:120%;padding:5px 0;}
+.content p, .content-left p{font-size:12px;line-height:18px;}
+.content .testimonial::before{top:25%;font-size:40px;}
+.content .testimonial{white-space:normal;padding:20px;box-sizing:border-box;font-size:13px;line-height:140%;}
+.content h4, .content-left h4{font-size:20px;line-height:110%;}
+.content p.different, .content-left p.different{font-size:14px;line-height:150%;}
+.content ul.list-out li, .content-left ul.list-out li{background-position:left 3px;font-size:13px;line-height:20px;}
+.content ul.list-out, .content-left ul.list-out{margin:15px 10px;}
+.content .serv-type{width:100%;display:block;clear:both;margin:15px auto;}
+.content .serv-type div.banner h1{font-size:155%;left:10px;}
+}
+
+/* Media Queries Effect from 360px to 479px */
+@media only screen and (min-width:480px) and (max-width: 639px){
+#main-theme{background-size:160% auto;padding:30px 0 11px;}
+#main-theme .theme-content h3{font-size:150%;}
+#main-theme .theme-content p{display:none;}
+#main-theme .theme-content h1{font-size:230%;line-height:110%;padding:0 0 15px;}
+#main-theme .theme-content a.link{display:inline-block;clear:none;min-width:auto;padding:0 10px;line-height:30px;font-size:80%;}
+.services span.ser-list{width:48%;display:inline-block;}
+.what-we-manage .set-act, .what-we-manage .search{display:inline-block;width:49.9%;height:auto;min-height:325px;}
+.what-we-manage .search{height:auto;min-height:325px;padding:20px;}
+.what-we-manage .search h2{font-size:16px;line-height:100%;}
+.what-we-manage .search a.link-main{display:block;clear:both;}
+.clients img{margin:5px auto;display:inline-block;width:18%;}
+#highlight .wrapper .main-service{display:block;clear:both;float:none;width:100%;}
+#highlight .wrapper .main-service:nth-child(1){border-bottom:1px #d5d5d5 dashed;padding-bottom:15px;margin-bottom:30px;}
+#highlight .wrapper .middle{display:none;}
+#highlight .wrapper .main-service h1{font-size:180%;line-height:100%;}
+#highlight{padding:40px 0;}
+.services h1{font-size:260%;line-height:100%;}
+.services hr{width:20%;}
+.services h3{font-size:150%;line-height:110%;}
+.services p{padding:25px 0;}
+.services span.ser-list{margin-top:30px;}
+.what-we-manage h1, .clients h1{font-size:32px;line-height:100%;}
+.clients hr{margin-bottom:25px;width:20%;}
+#footer{padding:40px 0;}
+#footer .sec-wise{display:inline-block;width:32%;vertical-align:top;line-height:150%;}
+#footer .sec-wise img{margin-bottom:10px;}
+#footer ul p{clear:both;display:block;border:none;margin:10px auto;padding:0;}
+/* Inner Pages */
+.content h1, .content-left h1{font-size:200%;line-height:120%;}
+.content a.content-link, .content-left a.content-link{font-size:100%;line-height:120%;padding:5px 0;}
+.content p, .content-left p{font-size:12px;line-height:18px;}
+.content .testimonial::before{top:30%;font-size:40px;}
+.content .testimonial{white-space:normal;padding:20px;box-sizing:border-box;font-size:13px;line-height:140%;}
+.content h4, .content-left h4{font-size:20px;line-height:110%;}
+.content p.different, .content-left p.different{font-size:14px;line-height:150%;}
+.content ul.list-out li, .content-left ul.list-out li{background-position:left 3px;font-size:13px;line-height:20px;}
+.content ul.list-out, .content-left ul.list-out{margin:15px 10px;}
+.content .serv-type{width:100%;display:block;clear:both;margin:15px auto;}
+.content .serv-type div.banner h1{font-size:155%;left:10px;}
+}
+
+/* Media Queries Effect from 360px to 479px */
+@media only screen and (min-width:640px) and (max-width: 767px){
+#main-theme{background-size:160% auto;padding:30px 0 11px;}
+#main-theme .theme-content h3{font-size:220%;}
+#main-theme .theme-content h1{font-size:300%;line-height:110%;padding:0 0 15px;}
+#main-theme .theme-content a.link{display:inline-block;clear:none;min-width:auto;padding:0 10px;line-height:30px;font-size:80%;}
+.services span.ser-list{width:48%;display:inline-block;}
+.what-we-manage .set-act, .what-we-manage .search{display:inline-block;width:49.9%;height:auto;min-height:325px;}
+.what-we-manage .search{height:auto;min-height:325px;padding:20px;}
+.what-we-manage .search h2{font-size:20px;line-height:120%;}
+.what-we-manage .search a.link-main{display:block;clear:both;}
+.clients img{margin:5px auto;display:inline-block;width:30%;}
+#highlight .wrapper .main-service{width:43%;}
+#highlight .wrapper .middle{width:10%;}
+#highlight .wrapper .main-service h6{padding:25px 0;}
+#highlight .wrapper .main-service p{padding:0;}
+#highlight .wrapper .main-service h1{font-size:180%;line-height:100%;}
+#highlight{padding:40px 0;}
+.services hr{width:20%;}
+.services h3{font-size:170%;line-height:140%;}
+.services p{padding:25px 0;}
+.services span.ser-list{margin-top:30px;}
+.clients hr{margin-bottom:25px;width:20%;}
+#footer{padding:40px 0;}
+#footer .sec-wise{display:inline-block;width:32%;vertical-align:top;line-height:150%;}
+#footer .sec-wise img{margin-bottom:10px;}
+#footer ul p{clear:both;display:block;border:none;margin:10px auto;padding:0;}
+/* Inner Pages */
+.content h1, .content-left h1{font-size:200%;line-height:120%;}
+.content a.content-link, .content-left a.content-link{font-size:100%;line-height:120%;padding:5px 0;}
+.content p, .content-left p{font-size:12px;line-height:18px;}
+.content .testimonial::before{top:25%;font-size:40px;}
+.content .testimonial{white-space:normal;padding:20px;box-sizing:border-box;font-size:13px;line-height:140%;}
+.content h4, .content-left h4{font-size:20px;line-height:110%;}
+.content p.different, .content-left p.different{font-size:14px;line-height:150%;}
+.content ul.list-out li, .content-left ul.list-out li{background-position:left 3px;font-size:13px;line-height:20px;}
+.content ul.list-out, .content-left ul.list-out{margin:15px 10px;}
+.content .serv-type{width:100%;display:block;clear:both;margin:15px auto;}
+.content .serv-type div.banner h1{font-size:155%;left:10px;}
+}
+
+/* Media Queries Effect from 360px to 479px */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+#main-theme{background-size:cover;padding:100px 0 50px;}
+#main-theme .theme-content h1{padding:0 0 20px;}
+.services span.ser-list{width:32%;display:inline-block;}
+.what-we-manage .set-act, .what-we-manage .search{display:inline-block;width:49.9%;height:auto;min-height:360px;}
+.what-we-manage .search{height:auto;min-height:360px;}
+.what-we-manage .search a.link-main{display:block;clear:both;}
+.clients img{margin:5px auto;display:inline-block;}
+#highlight .wrapper .main-service{width:43%;}
+#highlight .wrapper .middle{width:10%;}
+#highlight .wrapper .main-service h6{padding:25px 0;}
+#highlight .wrapper .main-service p{padding:0;}
+#highlight .wrapper .main-service h1{font-size:200%;line-height:100%;}
+#highlight{padding:40px 0;}
+.services hr{width:20%;}
+.services h3{font-size:200%;line-height:140%;}
+.services p{padding:25px 0;}
+.services span.ser-list{margin-top:30px;}
+.clients hr{margin-bottom:25px;width:20%;}
+#footer{padding:40px 0;}
+#footer .sec-wise{display:inline-block;width:32%;vertical-align:top;line-height:150%;}
+#footer .sec-wise img{margin-bottom:10px;}
+#footer ul p{clear:both;display:block;border:none;margin:10px auto;padding:0;}
+/* Inner Pages */
+.content h1, .content-left h1{font-size:200%;line-height:120%;}
+.content a.content-link, .content-left a.content-link{font-size:100%;line-height:120%;padding:5px 0;}
+.content p, .content-left p{font-size:12px;line-height:18px;}
+.content .testimonial::before{top:30%;font-size:40px;}
+.content .testimonial{white-space:normal;padding:20px;box-sizing:border-box;font-size:13px;line-height:140%;}
+.content h4, .content-left h4{font-size:20px;line-height:110%;}
+.content p.different, .content-left p.different{font-size:14px;line-height:150%;}
+.content ul.list-out li, .content-left ul.list-out li{background-position:left 3px;font-size:13px;line-height:20px;}
+.content ul.list-out, .content-left ul.list-out{margin:15px 10px;}
+.content .serv-type{width:100%;display:block;clear:both;margin:15px auto;}
+.content .serv-type div.banner h1{font-size:155%;left:10px;}
+}
