@@ -122,7 +122,7 @@ if ($mimeType !== '' && !in_array($mimeType, $allowedMime, true)) {
 	exit;
 }
 
-$to = 'careers@sharpinfotech.com';
+$to = 'careers@sharpitco.com';
 $subject = 'New Job Application';
 $applicantName = $firstName . ' ' . $lastName;
 
@@ -140,7 +140,7 @@ $bodyText = "Applicant Name: {$applicantName}\n"
 $boundary = '==Multipart_Boundary_x' . md5((string)microtime()) . 'x';
 
 $headers = [];
-$headers[] = 'From: Sharp Infotech Careers <no-reply@sharpinfotech.com>';
+$headers[] = 'From: Sharp Infotech Careers <no-reply@sharpitco.com>';
 $headers[] = 'Reply-To: ' . $email;
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-Type: multipart/mixed; boundary="' . $boundary . '"';
@@ -160,11 +160,11 @@ $message .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
 $message .= $bodyText . "\r\n";
 
 $message .= '--' . $boundary . "\r\n";
-$message .= 'Content-Type: ' . $mimeType . '; name="' . $safeName . ""\r\n";
+$message .= 'Content-Type: ' . $mimeType . '; name="' . $safeName . '"' . "\r\n";
 $message .= "Content-Transfer-Encoding: base64\r\n";
-$message .= 'Content-Disposition: attachment; filename="' . $safeName . ""\r\n\r\n";
+$message .= 'Content-Disposition: attachment; filename="' . $safeName . '"' . "\r\n\r\n";
 $message .= $attachment . "\r\n";
-$message .= '--' . $boundary . "--";
+$message .= '--' . $boundary . '--';
 
 $sent = mail($to, $subject, $message, implode("\r\n", $headers));
 
