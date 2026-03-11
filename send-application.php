@@ -140,7 +140,7 @@ $bodyText = "Applicant Name: {$applicantName}\n"
 $boundary = '==Multipart_Boundary_x' . md5((string)microtime()) . 'x';
 
 $headers = [];
-$headers[] = 'From: Sharp Infotech Careers <no-reply@sharpitco.com>';
+$headers[] = 'From: Sharp Infotech Careers <careers@sharpitco.com>';
 $headers[] = 'Reply-To: ' . $email;
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-Type: multipart/mixed; boundary="' . $boundary . '"';
